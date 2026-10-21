@@ -12,7 +12,7 @@ export default defineConfig({
 				assets: 'docs'
 			}),
 			paths: {
-				base: process.env.NODE_ENV === 'production' ? '/torpedo' : ''
+				base: '/torpedo'
 			},
 		})
 	]

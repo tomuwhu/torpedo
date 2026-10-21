@@ -48,7 +48,6 @@
             }
         }
     })
-    console.log(palya)
 </script>
 <h1>Torpedo</h1>
 <table>
