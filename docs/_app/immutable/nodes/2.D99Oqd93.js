@@ -1,1 +1,0 @@
-import{A as e,h as t,j as n,p as r}from"../chunks/HPGeeWOB.js";e();var i=t(`<h1>Torpedo</h1> <p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>`,1);function a(e){var t=i();n(2),r(e,t)}export{a as component};
