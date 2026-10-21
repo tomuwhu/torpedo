@@ -1,5 +1,5 @@
 <script>
-    let hajok = [4, 3, 3, 2, 2, 2, 1]
+    let hajok = [4, 3, 3, 2, 2, 2, 1, 1, 1, 1]
     let display = Array.from({length: 10}).map(()=>Array(10).fill(""))
     let palya = Array.from({length: 10}).map(()=>Array(10).fill(0))
     hajok.forEach((v, j) => {
@@ -102,10 +102,13 @@
         background-color: rgb(255, 127, 189);
     }
     td.c6 {
-        background-color: aquamarine;
+        background-color: rgb(215, 147, 45);
     }
     td.c7 {
-        background-color: aquamarine;
+        background-color: rgb(131, 127, 255);
+    }
+    td.c8 {
+        background-color: rgb(29, 152, 57);
     }
     
 </style>
