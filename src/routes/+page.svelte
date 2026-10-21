@@ -1,5 +1,5 @@
 <script>
-    let hajok = [4, 3, 3, 2, 2, 2, 1, 1, 1, 1]
+    let hajok = [4, 3, 3, 2, 2, 2, 1]
     let display = Array.from({length: 10}).map(()=>Array(10).fill(""))
     let palya = Array.from({length: 10}).map(()=>Array(10).fill(0))
     hajok.forEach((v, j) => {
