@@ -1,5 +1,6 @@
 <script>
     let hajok = [4, 3, 3, 2, 2, 2, 1]
+    let display = Array.from({length: 10}).map(()=>Array(10).fill(""))
     let palya = Array.from({length: 10}).map(()=>Array(10).fill(0))
     hajok.forEach((v, j) => {
         let ok = false
@@ -52,11 +53,13 @@
 <h1>Torpedo</h1>
 <table>
     <tbody>
-    {#each palya as row, i}
+    {#each display as row, j}
     <tr>
-        {#each row as cell, j}
-            <td>
-                {cell}
+        {#each row as cell, i}
+            <td on:click={() => {
+                display[j][i] = palya[j][i]
+            }} class="c{display[j][i]}">
+                {cell>-1?["", "⬯", "①", "②", "③", "④", "⑤", "⑥", "⑦"][cell]:""}
             </td>
         {/each} 
     </tr>
@@ -80,4 +83,29 @@
         text-align: center;
         cursor: pointer;
     }
+    td.c0 {
+        background-color: beige;
+    }
+    td.c1 {
+        background-color: rgb(217, 216, 188);
+    }
+    td.c2 {
+        background-color: rgb(127, 255, 163);
+    }
+    td.c3 {
+        background-color: rgb(255, 185, 127);
+    }
+    td.c4 {
+        background-color: rgb(240, 127, 255);
+    }
+    td.c5 {
+        background-color: rgb(255, 127, 189);
+    }
+    td.c6 {
+        background-color: aquamarine;
+    }
+    td.c7 {
+        background-color: aquamarine;
+    }
+    
 </style>
